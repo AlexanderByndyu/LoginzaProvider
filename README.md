@@ -19,6 +19,36 @@ View
 </div>
 ```
 
+---------------------
+```html
+<html>
+  <head>
+    ....
+    @Html.LoginzaInit()
+    ....
+ </head>
+ <body>    
+        <div class="container">
+           ...
+           <div class="top_panel">
+                    @Html.Loginza()
+            </div>
+            ...
+           <div class="left_panel">
+                    @Html.Loginza("RegisterByLoginza","Account",new [] {"google","yandex","mailru","rambler"})
+           </div>
+            ...
+            <div class="right_panel">
+                    @Html.Loginza("Account/RegisterByLoginza","Social network",new [] {"vkontakte","odnoklassniki","facebook"})
+            </div>
+           ...
+           <div class="bottom_panel">
+                    @Html.Loginza("RegisterByLoginza", "Account", "<img src=\"\\Content\\images\\my_image\" alt=\"\"/>", "webmoney", "rambler", "flickr", "lastfm", "verisign", "aol")
+            </div>
+ </body>
+</html>
+```
+
 ViewModel
 --------------------
 ```c#
