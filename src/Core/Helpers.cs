@@ -100,7 +100,7 @@ namespace System.Web.Mvc
         /// <returns></returns>
         public static MvcHtmlString Loginza(this HtmlHelper html, string action, string controller, string TextLink, params string[] providers)
         {
-            return html.Loginza(string.Format("/{1}/{0}", action, controller), TextLink, (string[])null);
+            return html.Loginza(string.Format("/{1}/{0}", action, controller), TextLink,providers);
         }
 
         /// <summary>
