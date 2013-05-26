@@ -1,4 +1,4 @@
-﻿namespace LoginzaProvider.Core
+﻿namespace System.Web.Mvc
 {
     using System;
     using System.Linq;
